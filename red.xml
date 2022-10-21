@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<projectConfiguration>
+    <configVersion>2</configVersion>
+    <relativeTo>WORKSPACE</relativeTo>
+    <referencedLibrary type="PYTHON" name="AutoItLibrary" path="C:/Users/suryasur/AppData/Local/Programs/Python/Python37/Lib/site-packages/AutoItLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="ExcelRobot" path="C:/Users/suryasur/AppData/Local/Programs/Python/Python37/Lib/site-packages/ExcelRobot/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="keyring" path="C:/Users/suryasur/AppData/Local/Programs/Python/Python37/Lib/site-packages/keyring/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="OCRLibrary" path="C:/Users/suryasur/AppData/Local/Programs/Python/Python37/Lib/site-packages/OCRLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="random" path="C:/Users/suryasur/AppData/Local/Programs/Python/Python37/Lib/random.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary" path="C:/Users/suryasur/AppData/Local/Programs/Python/Python37/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SikuliLibrary" path="C:/Users/suryasur/AppData/Local/Programs/Python/Python37/Lib/site-packages/SikuliLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="DatabaseLibrary" path="C:/Users/suryasur/AppData/Local/Programs/Python/Python37/Lib/site-packages/DatabaseLibrary/__init__.py" dynamic="false"/>
+    <pythonpath/>
+    <classpath/>
+    <excludedForValidation/>
+    <isValidatedFileSizeCheckingEnabled>true</isValidatedFileSizeCheckingEnabled>
+    <validatedFileMaxSize>1024</validatedFileMaxSize>
+</projectConfiguration>

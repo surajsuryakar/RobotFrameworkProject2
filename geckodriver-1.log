@@ -1,0 +1,50 @@
+1664266464402	geckodriver	INFO	Listening on 127.0.0.1:53787
+1664266464932	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\suryasur\\AppData\\Local\\Temp\\rust_mozprofileIOQglq"
+1664266465389	Marionette	INFO	Marionette enabled
+1664266465394	Marionette	INFO	Listening on port 53792
+1664266465749	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 580: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 580: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 580: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 580: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\suryasur\\AppData\\Local\\Temp\\rust_mozprofileIOQglq\\search.json.mozlz4", (void 0)))
+Extension error: TypeError: globalChrome_1.chrome.runtime.lastError is null moz-extension://7d4e2d89-c014-4e38-8cb7-10c3f6d233a1/background.js 11425
+[[Exception stack
+this.AternityExtension.background</TabsStates.prototype.getFrame/<@moz-extension://7d4e2d89-c014-4e38-8cb7-10c3f6d233a1/background.js:11425:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:628:13
+wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:804:18
+]]
+Extension error: TypeError: globalChrome_1.chrome.runtime.lastError is null moz-extension://7d4e2d89-c014-4e38-8cb7-10c3f6d233a1/background.js 11425
+[[Exception stack
+this.AternityExtension.background</TabsStates.prototype.getFrame/<@moz-extension://7d4e2d89-c014-4e38-8cb7-10c3f6d233a1/background.js:11425:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:628:13
+wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:804:18
+]]
+Extension error: TypeError: globalChrome_1.chrome.runtime.lastError is null moz-extension://7d4e2d89-c014-4e38-8cb7-10c3f6d233a1/background.js 11425
+[[Exception stack
+this.AternityExtension.background</TabsStates.prototype.getFrame/<@moz-extension://7d4e2d89-c014-4e38-8cb7-10c3f6d233a1/background.js:11425:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:628:13
+wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:804:18
+]]
+JavaScript error: resource://gre/modules/XULStore.jsm, line 62: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 62: Error: Can't find profile directory.
+Extension error: TypeError: globalChrome_1.chrome.runtime.lastError is null moz-extension://7d4e2d89-c014-4e38-8cb7-10c3f6d233a1/background.js 11425
+[[Exception stack
+this.AternityExtension.background</TabsStates.prototype.getFrame/<@moz-extension://7d4e2d89-c014-4e38-8cb7-10c3f6d233a1/background.js:11425:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:628:13
+wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:804:18
+]]
+Extension error: TypeError: globalChrome_1.chrome.runtime.lastError is null moz-extension://7d4e2d89-c014-4e38-8cb7-10c3f6d233a1/background.js 11425
+[[Exception stack
+this.AternityExtension.background</TabsStates.prototype.getFrame/<@moz-extension://7d4e2d89-c014-4e38-8cb7-10c3f6d233a1/background.js:11425:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:628:13
+wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:804:18
+]]
+1664266525454	Marionette	INFO	Stopped listening on port 53792
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_untrustedmodules_ping

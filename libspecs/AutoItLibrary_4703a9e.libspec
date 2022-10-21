@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec format="ROBOT" generated="2022-09-24T05:19:56Z" lineno="51" name="AutoItLibrary" namedargs="true" scope="GLOBAL" source="C:\Users\suryasur\AppData\Local\Programs\Python\Python37\Lib\site-packages\AutoItLibrary\__init__.py" specversion="2" type="LIBRARY">
+<version />
+<scope>global</scope>
+<namedargs>yes</namedargs>
+<doc>*AutoItLibrary* is a Robot Framework keyword library wrapper for for the freeware *AutoIt* tool
+(http://www.autoitscript.com/autoit3/index.shtml) using AutoIt's *AutoItX.dll* COM object. The
+*AutoItLibrary* class provides a proxy for the AutoIt keywords callable on the AutoIt COM object and
+provides additional high-level keywords implemented as methods in this class.
+
+In the following documentation on each keyword, the keywords whose documentation is simply
+_method &lt;KeywordName&gt;_ (e.g. "_method ControlClick_") are the native AutoIt keywords.  The detailed
+documentation for these keywords is available in the AutoItX documentation file:
+*AutoItX.chm*.  This file is installed as part of the installation of *AutoItLibrary* as:
+
+    C:\RobotFramework\Extensions\AutoItLibrary\AutoItX.chm
+
+In order to discover the control identifiers in a given Windows GUI, AutoIt provides a standalone
+tool called the AutoIt Window Info Tool which is installed as part of the installation of
+*AutoItLibrary* as:
+
+    C:\RobotFramework\Extensions\AutoItLibrary\Au3Info.exe
+
+This tool is documented here: http://www.autoitscript.com/autoit3/docs/intro/au3spy.htm</doc>
+<init lineno="76">
+<arguments>
+<arg>TimeOut=60</arg>
+<arg>CaptureScreenOnError=False</arg>
+</arguments>
+<doc>| OutputDir=&lt;path&gt;          | Output directory for captured screenshots. Should set to _${OUTPUTDIR}_ |
+| Timeout=&lt;seconds&gt;         | Default TimeOut value in seconds.                                       |
+|                           | This is used in other methods when their TimeOut parameter is not used. |
+| CaptureScreenOnError=True | Defaults to False.  Set to _${True}_ to capture the PC screen on any    |
+|                           | AutoItLibrary keyword failure.                                          |</doc>
+</init>
+<kw lineno="33" name="Auto It Set Option" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strOption=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nValue=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method AutoItSetOption</doc>
+</kw>
+<kw lineno="38" name="Clip Get" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+</arguments>
+<doc>method ClipGet</doc>
+</kw>
+<kw lineno="43" name="Clip Put" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strClip=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method ClipPut</doc>
+</kw>
+<kw lineno="48" name="Control Click" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strButton=LEFT</arg>
+<arg>nNumClicks=1</arg>
+<arg>nX=-2147483647</arg>
+<arg>nY=-2147483647</arg>
+</arguments>
+<doc>method ControlClick</doc>
+</kw>
+<kw lineno="55" name="Control Command" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strCommand=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strExtra=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method ControlCommand</doc>
+</kw>
+<kw lineno="62" name="Control Disable" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method ControlDisable</doc>
+</kw>
+<kw lineno="67" name="Control Enable" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method ControlEnable</doc>
+</kw>
+<kw lineno="72" name="Control Focus" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method ControlFocus</doc>
+</kw>
+<kw lineno="77" name="Control Get Focus" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method ControlGetFocus</doc>
+</kw>
+<kw lineno="82" name="Control Get Handle" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method ControlGetHandle</doc>
+</kw>
+<kw lineno="88" name="Control Get Pos Height" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method ControlGetPosHeight</doc>
+</kw>
+<kw lineno="93" name="Control Get Pos Width" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method ControlGetPosWidth</doc>
+</kw>
+<kw lineno="98" name="Control Get Pos X" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method ControlGetPosX</doc>
+</kw>
+<kw lineno="103" name="Control Get Pos Y" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method ControlGetPosY</doc>
+</kw>
+<kw lineno="108" name="Control Get Text" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method ControlGetText</doc>
+</kw>
+<kw lineno="114" name="Control Hide" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method ControlHide</doc>
+</kw>
+<kw lineno="119" name="Control List View" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strCommand=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strExtra1=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strExtra2=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method ControlListView</doc>
+</kw>
+<kw lineno="127" name="Control Move" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nX=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nY=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nWidth=-1</arg>
+<arg>nHeight=-1</arg>
+</arguments>
+<doc>method ControlMove</doc>
+</kw>
+<kw lineno="134" name="Control Send" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strSendText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nMode=0</arg>
+</arguments>
+<doc>method ControlSend</doc>
+</kw>
+<kw lineno="140" name="Control Set Text" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strControlText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method ControlSetText</doc>
+</kw>
+<kw lineno="145" name="Control Show" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method ControlShow</doc>
+</kw>
+<kw lineno="150" name="Control Tree View" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strCommand=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strExtra1=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strExtra2=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method ControlTreeView</doc>
+</kw>
+<kw lineno="158" name="Drive Map Add" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strDevice=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strShare=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nFlags=0</arg>
+<arg>strUser=</arg>
+<arg>strPwd=</arg>
+</arguments>
+<doc>method DriveMapAdd</doc>
+</kw>
+<kw lineno="164" name="Drive Map Del" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strDevice=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method DriveMapDel</doc>
+</kw>
+<kw lineno="169" name="Drive Map Get" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strDevice=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method DriveMapGet</doc>
+</kw>
+<kw lineno="197" name="Get Active Window Image">
+<arguments>
+<arg>FilePath</arg>
+</arguments>
+<doc>Capture an image of the active window into the given _FilePath_.
+The given _FilePath_ must be relative to Robot Framework output directory,
+otherwise the embedded image will not be shown in the log file.</doc>
+</kw>
+<kw lineno="178" name="Get Auto It Version">
+<arguments>
+</arguments>
+<doc>Returns a string with the version of the AutoItX COM object.</doc>
+</kw>
+<kw lineno="245" name="Get Screen Image">
+<arguments>
+<arg>FilePath</arg>
+</arguments>
+<doc>Capture a full screen image into the given _FilePath_.
+The given _FilePath_ must be relative to Robot Framework output directory,
+otherwise the embedded image will not be shown in the log file.</doc>
+</kw>
+<kw lineno="169" name="Get Version">
+<arguments>
+</arguments>
+<doc>Returns a string with the version of the AutoItLibrary.</doc>
+</kw>
+<kw lineno="175" name="Init" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+</arguments>
+<doc>method Init</doc>
+</kw>
+<kw lineno="179" name="Is Admin" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+</arguments>
+<doc>method IsAdmin</doc>
+</kw>
+<kw lineno="183" name="Mouse Click" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strButton=LEFT</arg>
+<arg>nX=-2147483647</arg>
+<arg>nY=-2147483647</arg>
+<arg>nClicks=1</arg>
+<arg>nSpeed=-1</arg>
+</arguments>
+<doc>method MouseClick</doc>
+</kw>
+<kw lineno="189" name="Mouse Click Drag" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strButton=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nX1=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nY1=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nX2=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nY2=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nSpeed=-1</arg>
+</arguments>
+<doc>method MouseClickDrag</doc>
+</kw>
+<kw lineno="196" name="Mouse Down" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strButton=LEFT</arg>
+</arguments>
+<doc>method MouseDown</doc>
+</kw>
+<kw lineno="201" name="Mouse Get Cursor" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+</arguments>
+<doc>method MouseGetCursor</doc>
+</kw>
+<kw lineno="205" name="Mouse Get Pos X" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+</arguments>
+<doc>method MouseGetPosX</doc>
+</kw>
+<kw lineno="209" name="Mouse Get Pos Y" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+</arguments>
+<doc>method MouseGetPosY</doc>
+</kw>
+<kw lineno="213" name="Mouse Move" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>nX=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nY=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nSpeed=-1</arg>
+</arguments>
+<doc>method MouseMove</doc>
+</kw>
+<kw lineno="218" name="Mouse Up" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strButton=LEFT</arg>
+</arguments>
+<doc>method MouseUp</doc>
+</kw>
+<kw lineno="223" name="Mouse Wheel" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strDirection=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nClicks=1</arg>
+</arguments>
+<doc>method MouseWheel</doc>
+</kw>
+<kw lineno="228" name="Opt" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strOption=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nValue=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method Opt</doc>
+</kw>
+<kw lineno="233" name="Pixel Checksum" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>nLeft=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nTop=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nRight=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nBottom=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nStep=1</arg>
+</arguments>
+<doc>method PixelChecksum</doc>
+</kw>
+<kw lineno="239" name="Pixel Get Color" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>nX=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nY=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method PixelGetColor</doc>
+</kw>
+<kw lineno="244" name="Pixel Search" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>nLeft=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nTop=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nRight=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nBottom=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nCol=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nVar=0</arg>
+<arg>nStep=1</arg>
+</arguments>
+<doc>method PixelSearch</doc>
+</kw>
+<kw lineno="251" name="Process Close" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strProcess=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method ProcessClose</doc>
+</kw>
+<kw lineno="256" name="Process Exists" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strProcess=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method ProcessExists</doc>
+</kw>
+<kw lineno="261" name="Process Set Priority" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strProcess=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nPriority=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method ProcessSetPriority</doc>
+</kw>
+<kw lineno="266" name="Process Wait" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strProcess=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nTimeout=0</arg>
+</arguments>
+<doc>method ProcessWait</doc>
+</kw>
+<kw lineno="271" name="Process Wait Close" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strProcess=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nTimeout=0</arg>
+</arguments>
+<doc>method ProcessWaitClose</doc>
+</kw>
+<kw lineno="285" name="Run">
+<arguments>
+<arg>FileName</arg>
+<arg>WorkingDir=</arg>
+<arg>Flag=</arg>
+</arguments>
+<doc>Direct wrapper for AutoIt's Run method.
+
+This is required in order to do error code translation into exceptions for Robot Framework.</doc>
+</kw>
+<kw lineno="281" name="Run As" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strUser=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strDomain=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strPassword=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nLogonFlag=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strRun=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strDir=</arg>
+<arg>nShowFlag=13</arg>
+</arguments>
+<doc>method RunAs</doc>
+</kw>
+<kw lineno="288" name="Run As Wait" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strUser=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strDomain=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strPassword=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nLogonFlag=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strRun=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strDir=</arg>
+<arg>nShowFlag=13</arg>
+</arguments>
+<doc>method RunAsWait</doc>
+</kw>
+<kw lineno="295" name="Run Wait" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strRun=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strDir=</arg>
+<arg>nShowFlag=13</arg>
+</arguments>
+<doc>method RunWait</doc>
+</kw>
+<kw lineno="300" name="Send" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strSendText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nMode=0</arg>
+</arguments>
+<doc>method Send</doc>
+</kw>
+<kw lineno="305" name="Shutdown" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>nFlags=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method Shutdown</doc>
+</kw>
+<kw lineno="315" name="Statusbar Get Text" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=</arg>
+<arg>nPart=1</arg>
+</arguments>
+<doc>method StatusbarGetText</doc>
+</kw>
+<kw lineno="320" name="Tool Tip" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTip=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nX=-2147483647</arg>
+<arg>nY=-2147483647</arg>
+</arguments>
+<doc>method ToolTip</doc>
+</kw>
+<kw lineno="392" name="Wait For Active Window">
+<arguments>
+<arg>WindowTitle</arg>
+<arg>WindowText=</arg>
+<arg>TimeOut=-1</arg>
+</arguments>
+<doc>Wait up to _TimeOut_ seconds for the window with the given _WindowTitle_ and optional
+_WindowText_ to appear. Force this to be the active window after it appears.  Optionally do a
+full screen capture on failure.
+
+Parameters:
+| WindowTitle=&lt;string&gt;  | Title of the application window expected to appear      |
+| [WindowText=&lt;string&gt;] | Optional text on the window expected to appear          |
+| [TimeOut=&lt;seconds&gt;]   | Optional overide to the default timeout set in __init__ |</doc>
+</kw>
+<kw lineno="325" name="Win Activate" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinActivate</doc>
+</kw>
+<kw lineno="330" name="Win Active" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinActive</doc>
+</kw>
+<kw lineno="335" name="Win Close" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinClose</doc>
+</kw>
+<kw lineno="340" name="Win Exists" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinExists</doc>
+</kw>
+<kw lineno="345" name="Win Get Caret Pos X" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+</arguments>
+<doc>method WinGetCaretPosX</doc>
+</kw>
+<kw lineno="349" name="Win Get Caret Pos Y" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+</arguments>
+<doc>method WinGetCaretPosY</doc>
+</kw>
+<kw lineno="353" name="Win Get Class List" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetClassList</doc>
+</kw>
+<kw lineno="358" name="Win Get Client Size Height" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetClientSizeHeight</doc>
+</kw>
+<kw lineno="363" name="Win Get Client Size Width" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetClientSizeWidth</doc>
+</kw>
+<kw lineno="368" name="Win Get Handle" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetHandle</doc>
+</kw>
+<kw lineno="373" name="Win Get Pos Height" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetPosHeight</doc>
+</kw>
+<kw lineno="378" name="Win Get Pos Width" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetPosWidth</doc>
+</kw>
+<kw lineno="383" name="Win Get Pos X" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetPosX</doc>
+</kw>
+<kw lineno="388" name="Win Get Pos Y" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetPosY</doc>
+</kw>
+<kw lineno="393" name="Win Get Process" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetProcess</doc>
+</kw>
+<kw lineno="398" name="Win Get State" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetState</doc>
+</kw>
+<kw lineno="403" name="Win Get Text" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetText</doc>
+</kw>
+<kw lineno="408" name="Win Get Title" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetTitle</doc>
+</kw>
+<kw lineno="413" name="Win Kill" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinKill</doc>
+</kw>
+<kw lineno="418" name="Win List" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinList</doc>
+</kw>
+<kw lineno="423" name="Win Menu Select Item" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strItem1=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strItem2=</arg>
+<arg>strItem3=</arg>
+<arg>strItem4=</arg>
+<arg>strItem5=</arg>
+<arg>strItem6=</arg>
+<arg>strItem7=</arg>
+<arg>strItem8=</arg>
+</arguments>
+<doc>method WinMenuSelectItem</doc>
+</kw>
+<kw lineno="431" name="Win Minimize All" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+</arguments>
+<doc>method WinMinimizeAll</doc>
+</kw>
+<kw lineno="435" name="Win Minimize All Undo" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+</arguments>
+<doc>method WinMinimizeAllUndo</doc>
+</kw>
+<kw lineno="439" name="Win Move" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nX=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nY=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nWidth=-1</arg>
+<arg>nHeight=-1</arg>
+</arguments>
+<doc>method WinMove</doc>
+</kw>
+<kw lineno="446" name="Win Set On Top" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nFlag=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method WinSetOnTop</doc>
+</kw>
+<kw lineno="451" name="Win Set State" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nFlags=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method WinSetState</doc>
+</kw>
+<kw lineno="456" name="Win Set Title" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strNewTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method WinSetTitle</doc>
+</kw>
+<kw lineno="461" name="Win Set Trans" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>nTrans=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+</arguments>
+<doc>method WinSetTrans</doc>
+</kw>
+<kw lineno="317" name="Win Wait">
+<arguments>
+<arg>WindowTitle</arg>
+<arg>WindowText=</arg>
+<arg>TimeOut=-1</arg>
+</arguments>
+<doc>Direct wrapper for AutoIt's WinWait method.
+
+This is required in order to do return code translation into exceptions for Robot Framework.
+On failure, optionally captures the full screen image to FAIL_WinWait_&lt;n&gt;.png.</doc>
+</kw>
+<kw lineno="342" name="Win Wait Active">
+<arguments>
+<arg>WindowTitle</arg>
+<arg>WindowText=</arg>
+<arg>TimeOut=-1</arg>
+</arguments>
+<doc>Direct wrapper for AutoIt's WinWaitActive method.
+
+This is required in order to do return code translation into exceptions for Robot Framework.
+On failure, optionally captures the full screen image to FAIL_WinWaitActive_&lt;n&gt;.png.</doc>
+</kw>
+<kw lineno="367" name="Win Wait Close">
+<arguments>
+<arg>WindowTitle</arg>
+<arg>WindowText=</arg>
+<arg>TimeOut=-1</arg>
+</arguments>
+<doc>Direct wrapper for AutoIt's WinWaitClose method.
+
+This is required in order to do return code translation into exceptions for Robot Framework.
+On failure, optionally captures the full screen image to FAIL_WinWaitClose_&lt;n&gt;.png.</doc>
+</kw>
+<kw lineno="481" name="Win Wait Not Active" source="C:\Users\suryasur\AppData\Local\Temp\gen_py\3.7\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0000029A737836E0&gt;</arg>
+<arg>strText=</arg>
+<arg>nTimeout=0</arg>
+</arguments>
+<doc>method WinWaitNotActive</doc>
+</kw>
+</keywordspec>

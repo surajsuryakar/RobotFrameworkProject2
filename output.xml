@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.7.4 on win32)" generated="20221021 13:23:44.823" rpa="false">
+<suite id="s1" name="RobotProject2" source="C:\SS\RF\WS_RF\RobotProject2">
+<suite id="s1-s1" name="Tasks" source="C:\SS\RF\WS_RF\RobotProject2\tasks">
+<suite id="s1-s1-s1" name="testResourse1" source="C:\SS\RF\WS_RF\RobotProject2\tasks\testResourse1.robot">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Inside suite setup...</arg>
+</arguments>
+<msg timestamp="20221021 13:23:45.731" level="INFO">Inside suite setup...</msg>
+<status status="PASS" starttime="20221021 13:23:45.730" endtime="20221021 13:23:45.731"></status>
+</kw>
+<test id="s1-s1-s1-t1" name="DesktopTest1">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Inside testcase setup..</arg>
+</arguments>
+<msg timestamp="20221021 13:23:45.733" level="INFO">Inside testcase setup..</msg>
+<status status="PASS" starttime="20221021 13:23:45.732" endtime="20221021 13:23:45.733"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>DesktopTest1 started</arg>
+</arguments>
+<msg timestamp="20221021 13:23:45.734" level="INFO">DesktopTest1 started</msg>
+<status status="PASS" starttime="20221021 13:23:45.733" endtime="20221021 13:23:45.734"></status>
+</kw>
+<kw name="DesktopCalculator1">
+<kw name="Run" library="AutoItLibrary">
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<arguments>
+<arg>calc.exe</arg>
+</arguments>
+<msg timestamp="20221021 13:23:45.772" level="INFO">AutoItLibrary.Run(FileName='calc.exe', WorkingDir='', Flag='')</msg>
+<status status="PASS" starttime="20221021 13:23:45.735" endtime="20221021 13:23:45.772"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>App started</arg>
+</arguments>
+<msg timestamp="20221021 13:23:45.773" level="INFO">App started</msg>
+<status status="PASS" starttime="20221021 13:23:45.772" endtime="20221021 13:23:45.773"></status>
+</kw>
+<kw name="Win Wait Active" library="AutoItLibrary">
+<doc>Direct wrapper for AutoIt's WinWaitActive method.</doc>
+<arguments>
+<arg>Calculator</arg>
+<arg>${EmptyVariable}</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20221021 13:23:46.405" level="INFO">AutoItLibrary.WinWaitActive(WindowTitle='Calculator', WindowText='', TimeOut=5)</msg>
+<status status="PASS" starttime="20221021 13:23:45.773" endtime="20221021 13:23:46.405"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Win Wait Active Done</arg>
+</arguments>
+<msg timestamp="20221021 13:23:46.406" level="INFO">Win Wait Active Done</msg>
+<status status="PASS" starttime="20221021 13:23:46.406" endtime="20221021 13:23:46.406"></status>
+</kw>
+<kw name="Control Click" library="AutoItLibrary">
+<doc>method ControlClick</doc>
+<arguments>
+<arg>Calculator</arg>
+<arg>${EmptyVariable}</arg>
+<arg>Button10</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:23:46.406" endtime="20221021 13:23:46.407"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Control Click done</arg>
+</arguments>
+<msg timestamp="20221021 13:23:46.409" level="INFO">Control Click done</msg>
+<status status="PASS" starttime="20221021 13:23:46.408" endtime="20221021 13:23:46.409"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20221021 13:23:48.413" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221021 13:23:46.410" endtime="20221021 13:23:48.413"></status>
+</kw>
+<kw name="Win Close" library="AutoItLibrary">
+<doc>method WinClose</doc>
+<arguments>
+<arg>Calculator</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:23:48.413" endtime="20221021 13:23:48.678"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>App Closed</arg>
+</arguments>
+<msg timestamp="20221021 13:23:48.679" level="INFO">App Closed</msg>
+<status status="PASS" starttime="20221021 13:23:48.678" endtime="20221021 13:23:48.679"></status>
+</kw>
+<status status="PASS" starttime="20221021 13:23:45.734" endtime="20221021 13:23:48.680"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221021 13:23:48.680" endtime="20221021 13:23:48.681"></status>
+</kw>
+<tags>
+<tag>Default</tag>
+</tags>
+<status status="PASS" starttime="20221021 13:23:45.732" endtime="20221021 13:23:48.681" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t2" name="DesktopTest2">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Inside testcase setup..</arg>
+</arguments>
+<msg timestamp="20221021 13:23:48.683" level="INFO">Inside testcase setup..</msg>
+<status status="PASS" starttime="20221021 13:23:48.683" endtime="20221021 13:23:48.684"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>DesktopTest2 started</arg>
+</arguments>
+<msg timestamp="20221021 13:23:48.685" level="INFO">DesktopTest2 started</msg>
+<status status="PASS" starttime="20221021 13:23:48.684" endtime="20221021 13:23:48.685"></status>
+</kw>
+<kw name="DesktopCentrix1">
+<kw name="Run" library="AutoItLibrary">
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<arguments>
+<arg>C:/SS/ZZOthers/Apps/CentrixDataSolutions App/CentrixDataSolutions.exe</arg>
+</arguments>
+<msg timestamp="20221021 13:23:49.346" level="INFO">AutoItLibrary.Run(FileName='C:/SS/ZZOthers/Apps/CentrixDataSolutions App/CentrixDataSolutions.exe', WorkingDir='', Flag='')</msg>
+<status status="PASS" starttime="20221021 13:23:48.686" endtime="20221021 13:23:49.346"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>App started</arg>
+</arguments>
+<msg timestamp="20221021 13:23:49.348" level="INFO">App started</msg>
+<status status="PASS" starttime="20221021 13:23:49.347" endtime="20221021 13:23:49.348"></status>
+</kw>
+<kw name="Win Wait Active" library="AutoItLibrary">
+<doc>Direct wrapper for AutoIt's WinWaitActive method.</doc>
+<arguments>
+<arg>Centrix Data Solutions - Please Log In</arg>
+<arg>${EmptyVariable}</arg>
+<arg>8</arg>
+</arguments>
+<msg timestamp="20221021 13:23:51.813" level="INFO">AutoItLibrary.WinWaitActive(WindowTitle='Centrix Data Solutions - Please Log In', WindowText='', TimeOut=8)</msg>
+<status status="PASS" starttime="20221021 13:23:49.349" endtime="20221021 13:23:51.814"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Win Wait Active Done</arg>
+</arguments>
+<msg timestamp="20221021 13:23:51.818" level="INFO">Win Wait Active Done</msg>
+<status status="PASS" starttime="20221021 13:23:51.816" endtime="20221021 13:23:51.819"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20221021 13:23:53.836" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221021 13:23:51.820" endtime="20221021 13:23:53.837"></status>
+</kw>
+<kw name="Control Click" library="AutoItLibrary">
+<doc>method ControlClick</doc>
+<arguments>
+<arg>Centrix Data Solutions - Please Log In</arg>
+<arg>${EmptyVariable}</arg>
+<arg>WindowsForms10.EDIT.app.0.141b42a_r9_ad12</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:23:53.838" endtime="20221021 13:23:53.851"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20221021 13:23:55.855" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221021 13:23:53.851" endtime="20221021 13:23:55.856"></status>
+</kw>
+<kw name="Control Click" library="AutoItLibrary">
+<doc>method ControlClick</doc>
+<arguments>
+<arg>Centrix Data Solutions - Please Log In</arg>
+<arg>${EmptyVariable}</arg>
+<arg>WindowsForms10.EDIT.app.0.141b42a_r9_ad11</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:23:55.857" endtime="20221021 13:23:55.870"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20221021 13:23:57.882" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221021 13:23:55.870" endtime="20221021 13:23:57.883"></status>
+</kw>
+<kw name="Control Click" library="AutoItLibrary">
+<doc>method ControlClick</doc>
+<arguments>
+<arg>Centrix Data Solutions - Please Log In</arg>
+<arg>${EmptyVariable}</arg>
+<arg>WindowsForms10.BUTTON.app.0.141b42a_r9_ad11</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:23:57.884" endtime="20221021 13:23:57.898"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Control Click done</arg>
+</arguments>
+<msg timestamp="20221021 13:23:57.901" level="INFO">Control Click done</msg>
+<status status="PASS" starttime="20221021 13:23:57.899" endtime="20221021 13:23:57.902"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20221021 13:23:59.919" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221021 13:23:57.903" endtime="20221021 13:23:59.920"></status>
+</kw>
+<kw name="Win Close" library="AutoItLibrary">
+<doc>method WinClose</doc>
+<arguments>
+<arg>Centrix Data Solutions - Please Log In</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:23:59.922" endtime="20221021 13:24:00.183"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>App Closed</arg>
+</arguments>
+<msg timestamp="20221021 13:24:00.187" level="INFO">App Closed</msg>
+<status status="PASS" starttime="20221021 13:24:00.186" endtime="20221021 13:24:00.188"></status>
+</kw>
+<status status="PASS" starttime="20221021 13:23:48.685" endtime="20221021 13:24:00.189"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221021 13:24:00.190" endtime="20221021 13:24:00.191"></status>
+</kw>
+<tags>
+<tag>Default</tag>
+</tags>
+<status status="PASS" starttime="20221021 13:23:48.682" endtime="20221021 13:24:00.192" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t3" name="DesktopTest3">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Inside testcase setup..</arg>
+</arguments>
+<msg timestamp="20221021 13:24:00.197" level="INFO">Inside testcase setup..</msg>
+<status status="PASS" starttime="20221021 13:24:00.196" endtime="20221021 13:24:00.197"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>DesktopTest3 started</arg>
+</arguments>
+<msg timestamp="20221021 13:24:00.199" level="INFO">DesktopTest3 started</msg>
+<status status="PASS" starttime="20221021 13:24:00.198" endtime="20221021 13:24:00.200"></status>
+</kw>
+<kw name="DesktopNotepad1">
+<kw name="Run" library="AutoItLibrary">
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<arguments>
+<arg>C:/Windows/system32/notepad.exe</arg>
+<arg>${EmptyVariable}</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20221021 13:24:00.219" level="INFO">AutoItLibrary.Run(FileName='C:/Windows/system32/notepad.exe', WorkingDir='', Flag='1')</msg>
+<status status="PASS" starttime="20221021 13:24:00.202" endtime="20221021 13:24:00.219"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>App started</arg>
+</arguments>
+<msg timestamp="20221021 13:24:00.221" level="INFO">App started</msg>
+<status status="PASS" starttime="20221021 13:24:00.220" endtime="20221021 13:24:00.221"></status>
+</kw>
+<kw name="Win Wait Active" library="AutoItLibrary">
+<doc>Direct wrapper for AutoIt's WinWaitActive method.</doc>
+<arguments>
+<arg>Untitled - Notepad</arg>
+<arg>${EmptyVariable}</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20221021 13:24:00.544" level="INFO">AutoItLibrary.WinWaitActive(WindowTitle='Untitled - Notepad', WindowText='', TimeOut=5)</msg>
+<status status="PASS" starttime="20221021 13:24:00.221" endtime="20221021 13:24:00.545"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Win Wait Active Done</arg>
+</arguments>
+<msg timestamp="20221021 13:24:00.548" level="INFO">Win Wait Active Done</msg>
+<status status="PASS" starttime="20221021 13:24:00.546" endtime="20221021 13:24:00.548"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20221021 13:24:02.565" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221021 13:24:00.549" endtime="20221021 13:24:02.566"></status>
+</kw>
+<kw name="Control Click" library="AutoItLibrary">
+<doc>method ControlClick</doc>
+<arguments>
+<arg>Untitled - Notepad</arg>
+<arg>${EmptyVariable}</arg>
+<arg>Notepad</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:02.568" endtime="20221021 13:24:02.573"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Control Click done</arg>
+</arguments>
+<msg timestamp="20221021 13:24:02.576" level="INFO">Control Click done</msg>
+<status status="PASS" starttime="20221021 13:24:02.575" endtime="20221021 13:24:02.577"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20221021 13:24:04.586" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221021 13:24:02.578" endtime="20221021 13:24:04.586"></status>
+</kw>
+<kw name="Win Close" library="AutoItLibrary">
+<doc>method WinClose</doc>
+<arguments>
+<arg>Untitled - Notepad</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:04.587" endtime="20221021 13:24:04.852"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>App Closed</arg>
+</arguments>
+<msg timestamp="20221021 13:24:04.854" level="INFO">App Closed</msg>
+<status status="PASS" starttime="20221021 13:24:04.853" endtime="20221021 13:24:04.854"></status>
+</kw>
+<status status="PASS" starttime="20221021 13:24:00.200" endtime="20221021 13:24:04.855"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221021 13:24:04.857" endtime="20221021 13:24:04.858"></status>
+</kw>
+<tags>
+<tag>Default</tag>
+</tags>
+<status status="PASS" starttime="20221021 13:24:00.194" endtime="20221021 13:24:04.858" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t4" name="DesktopTest4">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Inside testcase setup..</arg>
+</arguments>
+<msg timestamp="20221021 13:24:04.865" level="INFO">Inside testcase setup..</msg>
+<status status="PASS" starttime="20221021 13:24:04.864" endtime="20221021 13:24:04.866"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>DesktopTest4 started</arg>
+</arguments>
+<msg timestamp="20221021 13:24:04.868" level="INFO">DesktopTest4 started</msg>
+<status status="PASS" starttime="20221021 13:24:04.867" endtime="20221021 13:24:04.869"></status>
+</kw>
+<kw name="TrainingOrderSystemLogout">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20221021 13:24:05.877" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221021 13:24:04.871" endtime="20221021 13:24:05.879"></status>
+</kw>
+<kw name="Win Close" library="AutoItLibrary">
+<doc>method WinClose</doc>
+<arguments>
+<arg>Sign in</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:05.880" endtime="20221021 13:24:06.140"></status>
+</kw>
+<status status="PASS" starttime="20221021 13:24:04.870" endtime="20221021 13:24:06.141"></status>
+</kw>
+<kw name="TrainingOrderSystemLogin">
+<arguments>
+<arg>${TrainingRFUsername}</arg>
+<arg>${TrainingRFPassword}</arg>
+</arguments>
+<kw name="Run" library="AutoItLibrary">
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<arguments>
+<arg>C:/SS/ZZOthers/Apps/TrainingOrderSystem/TrainingOrderSystem.exe</arg>
+<arg>${EmptyVariable}</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20221021 13:24:06.301" level="INFO">AutoItLibrary.Run(FileName='C:/SS/ZZOthers/Apps/TrainingOrderSystem/TrainingOrderSystem.exe', WorkingDir='', Flag='1')</msg>
+<status status="PASS" starttime="20221021 13:24:06.142" endtime="20221021 13:24:06.301"></status>
+</kw>
+<kw name="Win Wait Active" library="AutoItLibrary">
+<doc>Direct wrapper for AutoIt's WinWaitActive method.</doc>
+<arguments>
+<arg>Sign in</arg>
+<arg>${EmptyVariable}</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20221021 13:24:06.700" level="INFO">AutoItLibrary.WinWaitActive(WindowTitle='Sign in', WindowText='', TimeOut=5)</msg>
+<status status="PASS" starttime="20221021 13:24:06.301" endtime="20221021 13:24:06.702"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>App started</arg>
+</arguments>
+<msg timestamp="20221021 13:24:06.706" level="INFO">App started</msg>
+<status status="PASS" starttime="20221021 13:24:06.703" endtime="20221021 13:24:06.707"></status>
+</kw>
+<kw name="Win Get Title" library="AutoItLibrary">
+<doc>method WinGetTitle</doc>
+<arguments>
+<arg>Sign in</arg>
+</arguments>
+<assign>
+<var>${title1}</var>
+</assign>
+<msg timestamp="20221021 13:24:06.711" level="INFO">${title1} = Sign in</msg>
+<status status="PASS" starttime="20221021 13:24:06.708" endtime="20221021 13:24:06.712"></status>
+</kw>
+<kw name="Control Set Text" library="AutoItLibrary">
+<doc>method ControlSetText</doc>
+<arguments>
+<arg>${title1}</arg>
+<arg>${EmptyVariable}</arg>
+<arg>[NAME:txtUsername]</arg>
+<arg>${u1}</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:06.713" endtime="20221021 13:24:06.720"></status>
+</kw>
+<kw name="Control Set Text" library="AutoItLibrary">
+<doc>method ControlSetText</doc>
+<arguments>
+<arg>${title1}</arg>
+<arg>${EmptyVariable}</arg>
+<arg>[NAME:txtPassword]</arg>
+<arg>${p1}</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:06.722" endtime="20221021 13:24:06.729"></status>
+</kw>
+<kw name="Control Click" library="AutoItLibrary">
+<doc>method ControlClick</doc>
+<arguments>
+<arg>${title1}</arg>
+<arg>${EmptyVariable}</arg>
+<arg>[NAME:Button1]</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:06.730" endtime="20221021 13:24:06.744"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Clicked sign in button</arg>
+</arguments>
+<msg timestamp="20221021 13:24:06.748" level="INFO">Clicked sign in button</msg>
+<status status="PASS" starttime="20221021 13:24:06.745" endtime="20221021 13:24:06.748"></status>
+</kw>
+<status status="PASS" starttime="20221021 13:24:06.141" endtime="20221021 13:24:06.752"></status>
+</kw>
+<kw name="TrainingOrderSystemOptions">
+<arguments>
+<arg>${OrderOptions1}</arg>
+</arguments>
+<kw name="Win Wait Active" library="AutoItLibrary">
+<doc>Direct wrapper for AutoIt's WinWaitActive method.</doc>
+<arguments>
+<arg>Options</arg>
+<arg>${EmptyVariable}</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20221021 13:24:07.089" level="INFO">AutoItLibrary.WinWaitActive(WindowTitle='Options', WindowText='', TimeOut=5)</msg>
+<status status="PASS" starttime="20221021 13:24:06.756" endtime="20221021 13:24:07.089"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Logged in, Options window opened</arg>
+</arguments>
+<msg timestamp="20221021 13:24:07.089" level="INFO">Logged in, Options window opened</msg>
+<status status="PASS" starttime="20221021 13:24:07.089" endtime="20221021 13:24:07.090"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20221021 13:24:09.094" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221021 13:24:07.090" endtime="20221021 13:24:09.095"></status>
+</kw>
+<kw name="Win Get Title" library="AutoItLibrary">
+<doc>method WinGetTitle</doc>
+<arguments>
+<arg>Options</arg>
+</arguments>
+<assign>
+<var>${title2}</var>
+</assign>
+<msg timestamp="20221021 13:24:09.103" level="INFO">${title2} = Options</msg>
+<status status="PASS" starttime="20221021 13:24:09.096" endtime="20221021 13:24:09.104"></status>
+</kw>
+<kw name="Control Set Text" library="AutoItLibrary">
+<doc>method ControlSetText</doc>
+<arguments>
+<arg>${title2}</arg>
+<arg>${EmptyVariable}</arg>
+<arg>[NAME:txtOption]</arg>
+<arg>${o1}</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:09.105" endtime="20221021 13:24:09.114"></status>
+</kw>
+<kw name="Control Click" library="AutoItLibrary">
+<doc>method ControlClick</doc>
+<arguments>
+<arg>${title2}</arg>
+<arg>${EmptyVariable}</arg>
+<arg>[NAME:Button2]</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:09.114" endtime="20221021 13:24:09.129"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Clicked Go button</arg>
+</arguments>
+<msg timestamp="20221021 13:24:09.130" level="INFO">Clicked Go button</msg>
+<status status="PASS" starttime="20221021 13:24:09.130" endtime="20221021 13:24:09.130"></status>
+</kw>
+<status status="PASS" starttime="20221021 13:24:06.753" endtime="20221021 13:24:09.131"></status>
+</kw>
+<kw name="TrainingOrderSystemCreateOrder">
+<arguments>
+<arg>${ProdCode}</arg>
+<arg>${NumberOfQty}</arg>
+<arg>${UnitPrice}</arg>
+<arg>${CostCenter}</arg>
+</arguments>
+<kw name="Win Wait Active" library="AutoItLibrary">
+<doc>Direct wrapper for AutoIt's WinWaitActive method.</doc>
+<arguments>
+<arg>New Order</arg>
+<arg>${EmptyVariable}</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20221021 13:24:09.424" level="INFO">AutoItLibrary.WinWaitActive(WindowTitle='New Order', WindowText='', TimeOut=5)</msg>
+<status status="PASS" starttime="20221021 13:24:09.131" endtime="20221021 13:24:09.424"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>New Order window opened</arg>
+</arguments>
+<msg timestamp="20221021 13:24:09.425" level="INFO">New Order window opened</msg>
+<status status="PASS" starttime="20221021 13:24:09.424" endtime="20221021 13:24:09.425"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20221021 13:24:10.436" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221021 13:24:09.425" endtime="20221021 13:24:10.436"></status>
+</kw>
+<kw name="Win Get Title" library="AutoItLibrary">
+<doc>method WinGetTitle</doc>
+<arguments>
+<arg>New Order</arg>
+</arguments>
+<assign>
+<var>${title3}</var>
+</assign>
+<msg timestamp="20221021 13:24:10.437" level="INFO">${title3} = New Order</msg>
+<status status="PASS" starttime="20221021 13:24:10.436" endtime="20221021 13:24:10.437"></status>
+</kw>
+<kw name="Control Set Text" library="AutoItLibrary">
+<doc>method ControlSetText</doc>
+<arguments>
+<arg>${title3}</arg>
+<arg>${EmptyVariable}</arg>
+<arg>[NAME:txtProductCode]</arg>
+<arg>ABC-125</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:10.437" endtime="20221021 13:24:10.439"></status>
+</kw>
+<kw name="Control Set Text" library="AutoItLibrary">
+<doc>method ControlSetText</doc>
+<arguments>
+<arg>${title3}</arg>
+<arg>${EmptyVariable}</arg>
+<arg>[NAME:txtNumberReq]</arg>
+<arg>3</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:10.439" endtime="20221021 13:24:10.442"></status>
+</kw>
+<kw name="Control Set Text" library="AutoItLibrary">
+<doc>method ControlSetText</doc>
+<arguments>
+<arg>${title3}</arg>
+<arg>${EmptyVariable}</arg>
+<arg>[NAME:txtUnitprice]</arg>
+<arg>2.16</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:10.442" endtime="20221021 13:24:10.444"></status>
+</kw>
+<kw name="Control Set Text" library="AutoItLibrary">
+<doc>method ControlSetText</doc>
+<arguments>
+<arg>${title3}</arg>
+<arg>${EmptyVariable}</arg>
+<arg>[NAME:txtCostCentre]</arg>
+<arg>101</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:10.445" endtime="20221021 13:24:10.446"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20221021 13:24:11.449" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221021 13:24:10.446" endtime="20221021 13:24:11.450"></status>
+</kw>
+<kw name="Control Click" library="AutoItLibrary">
+<doc>method ControlClick</doc>
+<arguments>
+<arg>${title3}</arg>
+<arg>${EmptyVariable}</arg>
+<arg>[NAME:Button1]</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:11.452" endtime="20221021 13:24:11.469"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Clicked Submit button</arg>
+</arguments>
+<msg timestamp="20221021 13:24:11.471" level="INFO">Clicked Submit button</msg>
+<status status="PASS" starttime="20221021 13:24:11.470" endtime="20221021 13:24:11.471"></status>
+</kw>
+<status status="PASS" starttime="20221021 13:24:09.131" endtime="20221021 13:24:11.472"></status>
+</kw>
+<kw name="TrainingOrderSystemVerifyOrder">
+<kw name="Win Wait Active" library="AutoItLibrary">
+<doc>Direct wrapper for AutoIt's WinWaitActive method.</doc>
+<arguments>
+<arg>Order Confirmation</arg>
+<arg>${EmptyVariable}</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20221021 13:24:13.772" level="INFO">AutoItLibrary.WinWaitActive(WindowTitle='Order Confirmation', WindowText='', TimeOut=5)</msg>
+<status status="PASS" starttime="20221021 13:24:11.473" endtime="20221021 13:24:13.773"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Order Confirmation window opened</arg>
+</arguments>
+<msg timestamp="20221021 13:24:13.775" level="INFO">Order Confirmation window opened</msg>
+<status status="PASS" starttime="20221021 13:24:13.774" endtime="20221021 13:24:13.776"></status>
+</kw>
+<kw name="Win Get Title" library="AutoItLibrary">
+<doc>method WinGetTitle</doc>
+<arguments>
+<arg>Order Confirmation</arg>
+</arguments>
+<assign>
+<var>${title4}</var>
+</assign>
+<msg timestamp="20221021 13:24:13.779" level="INFO">${title4} = Order Confirmation</msg>
+<status status="PASS" starttime="20221021 13:24:13.777" endtime="20221021 13:24:13.779"></status>
+</kw>
+<kw name="Control Get Text" library="AutoItLibrary">
+<doc>method ControlGetText</doc>
+<arguments>
+<arg>${title4}</arg>
+<arg>${EmptyVariable}</arg>
+<arg>[NAME:Label1]</arg>
+</arguments>
+<assign>
+<var>${Result}</var>
+</assign>
+<msg timestamp="20221021 13:24:13.785" level="INFO">${Result} = Please take note of your order reference: 774</msg>
+<status status="PASS" starttime="20221021 13:24:13.781" endtime="20221021 13:24:13.785"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${Result}</arg>
+<arg>Please take note of your order reference:</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:13.787" endtime="20221021 13:24:13.788"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20221021 13:24:14.801" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221021 13:24:13.788" endtime="20221021 13:24:14.803"></status>
+</kw>
+<kw name="Control Click" library="AutoItLibrary">
+<doc>method ControlClick</doc>
+<arguments>
+<arg>${title4}</arg>
+<arg>${EmptyVariable}</arg>
+<arg>[NAME:Button1]</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:14.804" endtime="20221021 13:24:14.820"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Clicked continue button</arg>
+</arguments>
+<msg timestamp="20221021 13:24:14.821" level="INFO">Clicked continue button</msg>
+<status status="PASS" starttime="20221021 13:24:14.821" endtime="20221021 13:24:14.822"></status>
+</kw>
+<status status="PASS" starttime="20221021 13:24:11.472" endtime="20221021 13:24:14.822"></status>
+</kw>
+<kw name="TrainingOrderSystemLogout">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20221021 13:24:15.828" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221021 13:24:14.823" endtime="20221021 13:24:15.829"></status>
+</kw>
+<kw name="Win Close" library="AutoItLibrary">
+<doc>method WinClose</doc>
+<arguments>
+<arg>Sign in</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:15.830" endtime="20221021 13:24:16.093"></status>
+</kw>
+<status status="PASS" starttime="20221021 13:24:14.823" endtime="20221021 13:24:16.095"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221021 13:24:16.096" endtime="20221021 13:24:16.098"></status>
+</kw>
+<tags>
+<tag>Default</tag>
+</tags>
+<status status="PASS" starttime="20221021 13:24:04.862" endtime="20221021 13:24:16.099" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t5" name="DesktopTest5">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Inside testcase setup..</arg>
+</arguments>
+<msg timestamp="20221021 13:24:16.104" level="INFO">Inside testcase setup..</msg>
+<status status="PASS" starttime="20221021 13:24:16.103" endtime="20221021 13:24:16.104"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>DesktopTest4 started</arg>
+</arguments>
+<msg timestamp="20221021 13:24:16.106" level="INFO">DesktopTest4 started</msg>
+<status status="PASS" starttime="20221021 13:24:16.106" endtime="20221021 13:24:16.106"></status>
+</kw>
+<kw name="TrainingOrderSystemLogout">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20221021 13:24:17.119" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221021 13:24:16.107" endtime="20221021 13:24:17.121"></status>
+</kw>
+<kw name="Win Close" library="AutoItLibrary">
+<doc>method WinClose</doc>
+<arguments>
+<arg>Sign in</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:17.122" endtime="20221021 13:24:17.128"></status>
+</kw>
+<status status="PASS" starttime="20221021 13:24:16.107" endtime="20221021 13:24:17.130"></status>
+</kw>
+<kw name="TrainingOrderSystemLogin">
+<arguments>
+<arg>${TrainingRFUsername}</arg>
+<arg>${TrainingRFPassword}</arg>
+</arguments>
+<kw name="Run" library="AutoItLibrary">
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<arguments>
+<arg>C:/SS/ZZOthers/Apps/TrainingOrderSystem/TrainingOrderSystem.exe</arg>
+<arg>${EmptyVariable}</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20221021 13:24:17.380" level="INFO">AutoItLibrary.Run(FileName='C:/SS/ZZOthers/Apps/TrainingOrderSystem/TrainingOrderSystem.exe', WorkingDir='', Flag='1')</msg>
+<status status="PASS" starttime="20221021 13:24:17.134" endtime="20221021 13:24:17.381"></status>
+</kw>
+<kw name="Win Wait Active" library="AutoItLibrary">
+<doc>Direct wrapper for AutoIt's WinWaitActive method.</doc>
+<arguments>
+<arg>Sign in</arg>
+<arg>${EmptyVariable}</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20221021 13:24:17.757" level="INFO">AutoItLibrary.WinWaitActive(WindowTitle='Sign in', WindowText='', TimeOut=5)</msg>
+<status status="PASS" starttime="20221021 13:24:17.381" endtime="20221021 13:24:17.757"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>App started</arg>
+</arguments>
+<msg timestamp="20221021 13:24:17.760" level="INFO">App started</msg>
+<status status="PASS" starttime="20221021 13:24:17.759" endtime="20221021 13:24:17.761"></status>
+</kw>
+<kw name="Win Get Title" library="AutoItLibrary">
+<doc>method WinGetTitle</doc>
+<arguments>
+<arg>Sign in</arg>
+</arguments>
+<assign>
+<var>${title1}</var>
+</assign>
+<msg timestamp="20221021 13:24:17.768" level="INFO">${title1} = Sign in</msg>
+<status status="PASS" starttime="20221021 13:24:17.763" endtime="20221021 13:24:17.769"></status>
+</kw>
+<kw name="Control Set Text" library="AutoItLibrary">
+<doc>method ControlSetText</doc>
+<arguments>
+<arg>${title1}</arg>
+<arg>${EmptyVariable}</arg>
+<arg>[NAME:txtUsername]</arg>
+<arg>${u1}</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:17.770" endtime="20221021 13:24:17.777"></status>
+</kw>
+<kw name="Control Set Text" library="AutoItLibrary">
+<doc>method ControlSetText</doc>
+<arguments>
+<arg>${title1}</arg>
+<arg>${EmptyVariable}</arg>
+<arg>[NAME:txtPassword]</arg>
+<arg>${p1}</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:17.778" endtime="20221021 13:24:17.791"></status>
+</kw>
+<kw name="Control Click" library="AutoItLibrary">
+<doc>method ControlClick</doc>
+<arguments>
+<arg>${title1}</arg>
+<arg>${EmptyVariable}</arg>
+<arg>[NAME:Button1]</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:17.792" endtime="20221021 13:24:17.807"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Clicked sign in button</arg>
+</arguments>
+<msg timestamp="20221021 13:24:17.809" level="INFO">Clicked sign in button</msg>
+<status status="PASS" starttime="20221021 13:24:17.808" endtime="20221021 13:24:17.810"></status>
+</kw>
+<status status="PASS" starttime="20221021 13:24:17.131" endtime="20221021 13:24:17.811"></status>
+</kw>
+<kw name="TrainingOrderSystemOptions">
+<arguments>
+<arg>${OrderOptions2}</arg>
+</arguments>
+<kw name="Win Wait Active" library="AutoItLibrary">
+<doc>Direct wrapper for AutoIt's WinWaitActive method.</doc>
+<arguments>
+<arg>Options</arg>
+<arg>${EmptyVariable}</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20221021 13:24:18.131" level="INFO">AutoItLibrary.WinWaitActive(WindowTitle='Options', WindowText='', TimeOut=5)</msg>
+<status status="PASS" starttime="20221021 13:24:17.812" endtime="20221021 13:24:18.131"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Logged in, Options window opened</arg>
+</arguments>
+<msg timestamp="20221021 13:24:18.133" level="INFO">Logged in, Options window opened</msg>
+<status status="PASS" starttime="20221021 13:24:18.132" endtime="20221021 13:24:18.133"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20221021 13:24:20.137" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221021 13:24:18.133" endtime="20221021 13:24:20.138"></status>
+</kw>
+<kw name="Win Get Title" library="AutoItLibrary">
+<doc>method WinGetTitle</doc>
+<arguments>
+<arg>Options</arg>
+</arguments>
+<assign>
+<var>${title2}</var>
+</assign>
+<msg timestamp="20221021 13:24:20.144" level="INFO">${title2} = Options</msg>
+<status status="PASS" starttime="20221021 13:24:20.139" endtime="20221021 13:24:20.145"></status>
+</kw>
+<kw name="Control Set Text" library="AutoItLibrary">
+<doc>method ControlSetText</doc>
+<arguments>
+<arg>${title2}</arg>
+<arg>${EmptyVariable}</arg>
+<arg>[NAME:txtOption]</arg>
+<arg>${o1}</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:20.146" endtime="20221021 13:24:20.153"></status>
+</kw>
+<kw name="Control Click" library="AutoItLibrary">
+<doc>method ControlClick</doc>
+<arguments>
+<arg>${title2}</arg>
+<arg>${EmptyVariable}</arg>
+<arg>[NAME:Button2]</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:20.155" endtime="20221021 13:24:20.168"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Clicked Go button</arg>
+</arguments>
+<msg timestamp="20221021 13:24:20.168" level="INFO">Clicked Go button</msg>
+<status status="PASS" starttime="20221021 13:24:20.168" endtime="20221021 13:24:20.168"></status>
+</kw>
+<status status="PASS" starttime="20221021 13:24:17.811" endtime="20221021 13:24:20.169"></status>
+</kw>
+<kw name="TrainingOrderSystemRetrieveOrder">
+<arguments>
+<arg>${OrderId}</arg>
+</arguments>
+<kw name="Win Wait Active" library="AutoItLibrary">
+<doc>Direct wrapper for AutoIt's WinWaitActive method.</doc>
+<arguments>
+<arg>View order</arg>
+<arg>${EmptyVariable}</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20221021 13:24:20.465" level="INFO">AutoItLibrary.WinWaitActive(WindowTitle='View order', WindowText='', TimeOut=5)</msg>
+<status status="PASS" starttime="20221021 13:24:20.169" endtime="20221021 13:24:20.466"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>View Order window opened</arg>
+</arguments>
+<msg timestamp="20221021 13:24:20.467" level="INFO">View Order window opened</msg>
+<status status="PASS" starttime="20221021 13:24:20.467" endtime="20221021 13:24:20.468"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20221021 13:24:21.480" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221021 13:24:20.469" endtime="20221021 13:24:21.482"></status>
+</kw>
+<kw name="Win Get Title" library="AutoItLibrary">
+<doc>method WinGetTitle</doc>
+<arguments>
+<arg>View order</arg>
+</arguments>
+<assign>
+<var>${title3}</var>
+</assign>
+<msg timestamp="20221021 13:24:21.488" level="INFO">${title3} = View order</msg>
+<status status="PASS" starttime="20221021 13:24:21.483" endtime="20221021 13:24:21.488"></status>
+</kw>
+<kw name="Control Set Text" library="AutoItLibrary">
+<doc>method ControlSetText</doc>
+<arguments>
+<arg>${title3}</arg>
+<arg>${EmptyVariable}</arg>
+<arg>[NAME:txtOrderRef]</arg>
+<arg>${oid}</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:21.490" endtime="20221021 13:24:21.503"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20221021 13:24:22.507" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221021 13:24:21.504" endtime="20221021 13:24:22.508"></status>
+</kw>
+<kw name="Control Click" library="AutoItLibrary">
+<doc>method ControlClick</doc>
+<arguments>
+<arg>${title3}</arg>
+<arg>${EmptyVariable}</arg>
+<arg>[NAME:Button1]</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:22.510" endtime="20221021 13:24:22.534"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Clicked Retrieve Order button</arg>
+</arguments>
+<msg timestamp="20221021 13:24:22.535" level="INFO">Clicked Retrieve Order button</msg>
+<status status="PASS" starttime="20221021 13:24:22.535" endtime="20221021 13:24:22.535"></status>
+</kw>
+<kw name="Control Get Text" library="AutoItLibrary">
+<doc>method ControlGetText</doc>
+<arguments>
+<arg>${title3}</arg>
+<arg>${EmptyVariable}</arg>
+<arg>[NAME:lblProductCode]</arg>
+</arguments>
+<assign>
+<var>${ProductCode}</var>
+</assign>
+<msg timestamp="20221021 13:24:24.575" level="INFO">${ProductCode} = No record found</msg>
+<status status="PASS" starttime="20221021 13:24:22.536" endtime="20221021 13:24:24.575"></status>
+</kw>
+<kw name="Control Get Text" library="AutoItLibrary">
+<doc>method ControlGetText</doc>
+<arguments>
+<arg>${title3}</arg>
+<arg>${EmptyVariable}</arg>
+<arg>[NAME:lblTotalPrice]</arg>
+</arguments>
+<assign>
+<var>${TotalPrice}</var>
+</assign>
+<msg timestamp="20221021 13:24:24.580" level="INFO">${TotalPrice} = </msg>
+<status status="PASS" starttime="20221021 13:24:24.576" endtime="20221021 13:24:24.580"></status>
+</kw>
+<status status="PASS" starttime="20221021 13:24:20.169" endtime="20221021 13:24:24.580"></status>
+</kw>
+<kw name="TrainingOrderSystemLogout">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20221021 13:24:25.591" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221021 13:24:24.581" endtime="20221021 13:24:25.592"></status>
+</kw>
+<kw name="Win Close" library="AutoItLibrary">
+<doc>method WinClose</doc>
+<arguments>
+<arg>Sign in</arg>
+</arguments>
+<status status="PASS" starttime="20221021 13:24:25.592" endtime="20221021 13:24:25.856"></status>
+</kw>
+<status status="PASS" starttime="20221021 13:24:24.581" endtime="20221021 13:24:25.856"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221021 13:24:25.858" endtime="20221021 13:24:25.858"></status>
+</kw>
+<tags>
+<tag>Default</tag>
+</tags>
+<status status="PASS" starttime="20221021 13:24:16.102" endtime="20221021 13:24:25.858" critical="yes"></status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221021 13:24:25.862" endtime="20221021 13:24:25.863"></status>
+</kw>
+<status status="PASS" starttime="20221021 13:23:44.876" endtime="20221021 13:24:25.863"></status>
+</suite>
+<status status="PASS" starttime="20221021 13:23:44.873" endtime="20221021 13:24:25.873"></status>
+</suite>
+<status status="PASS" starttime="20221021 13:23:44.853" endtime="20221021 13:24:25.879"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0">Critical Tests</stat>
+<stat pass="5" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="5" fail="0">Default</stat>
+</tag>
+<suite>
+<stat pass="5" fail="0" id="s1" name="RobotProject2">RobotProject2</stat>
+<stat pass="5" fail="0" id="s1-s1" name="Tasks">RobotProject2.Tasks</stat>
+<stat pass="5" fail="0" id="s1-s1-s1" name="testResourse1">RobotProject2.Tasks.testResourse1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
